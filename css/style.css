@@ -82,3 +82,7 @@ a {
 }
 
 /* SECTION PROJECTS */
+.projects {
+  background-color: var(--color-blue);
+  height: 100vh;
+}
