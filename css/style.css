@@ -262,6 +262,18 @@ a {
     grid-template-columns: 1fr;
     grid-row-gap: 5rem;
   }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 67rem) {
+  .contact__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /* MEDIA QUERY MOBILE */
@@ -273,5 +285,29 @@ a {
   .row {
     padding-top: 2rem;
     width: 90%;
+  }
+
+  .contact__work {
+    padding-top: 12rem;
+  }
+}
+
+@media (max-width: 44.4rem) {
+  .contact__list {
+    padding-bottom: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact__list:last-child {
+    padding-bottom: 8rem;
+  }
+
+  .footer {
+    padding: 2rem;
+    height: auto;
+  }
+
+  .footer p {
+    padding: 2rem;
   }
 }
