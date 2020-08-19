@@ -129,6 +129,11 @@ a {
   cursor: pointer;
 }
 
+.projects__container:hover .title-decorative {
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+
 .projects__container-upper {
   height: 80%;
 }
@@ -153,12 +158,7 @@ a {
   font-weight: 400;
 }
 
-.title-decorative1,
-.title-decorative2,
-.title-decorative3,
-.title-decorative4,
-.title-decorative5,
-.title-decorative6 {
+.title-decorative {
   color: var(--color-orange);
   opacity: 0;
 }
