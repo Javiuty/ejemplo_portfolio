@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejemplo-Portfolio</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
@@ -20,7 +24,7 @@
         <ul class="header__list">
           <li class="header__item"><a href="#welcome">About</a></li>
           <li class="header__item"><a href="#projects">Work</a></li>
-          <li class="header__item"><a href="#">Contact</a></li>
+          <li class="header__item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -31,7 +35,7 @@
     <section class="projects" id="projects">
       <h2 class="projects__title">These are some of my projects</h2>
       <div class="row">
-        <div class="projects__container">
+        <div class="projects__container" id="container1">
           <div class="projects__container-upper">
             <img
               src="./img/tribute Page.bmp"
@@ -39,15 +43,118 @@
               class="projects__img"
             />
           </div>
-          <div class="projects__container-lower" id="lower">
+          <div class="projects__container-lower">
             <h3 class="project_descrip">
-              <span class="title-decorative" id="title">< </span>Tribute Page
-              <span class="title-decorative" id="title">/></span>
+              <span class="title-decorative1" id="title">< </span>Tribute Page
+              <span class="title-decorative1" id="title">/></span>
+            </h3>
+          </div>
+        </div>
+        <div class="projects__container" id="container2">
+          <div class="projects__container-upper">
+            <img
+              src="./img/random-quote.bmp"
+              alt="random quote machine"
+              class="projects__img"
+            />
+          </div>
+          <div class="projects__container-lower">
+            <h3 class="project_descrip">
+              <span class="title-decorative2">< </span>Random Quote Machine
+              <span class="title-decorative2">/></span>
+            </h3>
+          </div>
+        </div>
+        <div class="projects__container" id="container3">
+          <div class="projects__container-upper">
+            <img
+              src="./img/calculator.bmp"
+              alt="Javascript-calculator"
+              class="projects__img"
+            />
+          </div>
+          <div class="projects__container-lower">
+            <h3 class="project_descrip">
+              <span class="title-decorative3">< </span>Javascript Calculator
+              <span class="title-decorative3">/></span>
             </h3>
           </div>
         </div>
       </div>
+      <div class="row margin-top-small">
+        <div class="projects__container" id="container4">
+          <div class="projects__container-upper">
+            <img
+              src="./img/map-data.bmp"
+              alt="map data accros the globe"
+              class="projects__img"
+            />
+          </div>
+          <div class="projects__container-lower">
+            <h3 class="project_descrip">
+              <span class="title-decorative4" id="title4">< </span>Map Data
+              Across the Globe
+              <span class="title-decorative4" id="title4">/></span>
+            </h3>
+          </div>
+        </div>
+        <div class="projects__container" id="container5">
+          <div class="projects__container-upper">
+            <img
+              src="./img/wikipedia.bmp"
+              alt="Wikipedia Viewer"
+              class="projects__img"
+            />
+          </div>
+          <div class="projects__container-lower">
+            <h3 class="project_descrip">
+              <span class="title-decorative5">< </span>Wikipedia Viewer
+              <span class="title-decorative5">/></span>
+            </h3>
+          </div>
+        </div>
+        <div class="projects__container" id="container6">
+          <div class="projects__container-upper">
+            <img
+              src="./img/tictactoe.bmp"
+              alt="tictactoe game"
+              class="projects__img"
+            />
+          </div>
+          <div class="projects__container-lower">
+            <h3 class="project_descrip">
+              <span class="title-decorative6">< </span>Tic Tac Toe Game
+              <span class="title-decorative6">/></span>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <button class="projects__show">
+        Show all <span class="bold toright">></span>
+      </button>
     </section>
+    <section class="contact" id="contact">
+      <h3 class="contact__work">Let's work together...</h3>
+      <h4 class="contact__coffee">How do you take your coffee?</h4>
+      <ul class="contact__list">
+        <li class="contact__item">
+          <i class="fab fa-facebook-square"></i> Facebook
+        </li>
+        <li class="contact__item"><i class="fab fa-github"></i> Github</li>
+        <li class="contact__item"><i class="fab fa-twitter"></i> Twitter</li>
+        <li class="contact__item"><i class="fas fa-at"></i> Send a mail</li>
+        <li class="contact__item"><i class="fas fa-mobile-alt"></i> Call me</li>
+      </ul>
+    </section>
+    <footer class="footer">
+      <p class="contact__paragraph">
+        **This is just a fake portfolio. All the projects and contact details
+        given are not real
+      </p>
+      <p class="contact__paragraph">
+        &copy; Created for freeCodeCamp <i class="fab fa-free-code-camp"></i>
+      </p>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
